@@ -1,0 +1,7562 @@
+var cityCircleData = [
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 41.26842105
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 42.64791667
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 28.26586022
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 22.27644444
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 28.1574124
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 19.7834965
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 15.35384615
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 19.29148649
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 20.39138889
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 26.92768817
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 22.89117647
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 28.14151515
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 32.75798319
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 18.8546131
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 14.91041667
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 17.0642547
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 23.945
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 19.53603352
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 20.18590308
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 18.72972973
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 27.00377095
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 37.25
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 46.03159785
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 37.93797297
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 32.7394844
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 28.71522989
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 18.17905405
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 21.16785206
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 17.07296196
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 23.26694561
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 21.48184282
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 17.56243243
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 18.865243
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 19.16760753
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 29.51944444
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Ho Chi Minh city",
+        "latitude": 10.802314,
+        "longitude": 106.631712,
+        "value": 28.69541779
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 60.34320113
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 52.16349206
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 41.60555556
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 28.59
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 25.00054054
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 22.09890561
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 29.88678977
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 30.72632293
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 44.85298742
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 41.82701613
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 54.98887381
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 46.71875
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 53.07414966
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 41.20972222
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 35.9697832
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 31.29297753
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 29.00349462
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 28.55879945
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 25.28561254
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 26.16002729
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 25.97625
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 45.17083333
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 50.74279946
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 29.39333333
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 24.27429379
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 30.66027778
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 33.44451962
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 25.90347222
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 25.24677419
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 21.23051075
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 24.56269504
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 18.60687332
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 23.93535211
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Shanghai",
+        "latitude": 31.099752,
+        "longitude": 121.502819,
+        "value": 45.65147849
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 20.6534413
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 25.02226891
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 34.46787634
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 20.99439891
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 28.4175
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 33.1032345
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 53.5259854
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 52.02201365
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 29.81845319
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 34.85625
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 29.73907734
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 19.65
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 37.30535988
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 48.63351351
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 48.02432024
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 45.98757282
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 42.2148448
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 77.28723703
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 39.44556452
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 50.09421265
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 36.57271364
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 42.47311828
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 23.17444134
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 22.00806452
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 22.52742616
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 25.20576
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 31.85972973
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 33.23194444
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 52.12018634
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 54.99164265
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Tashkent",
+        "latitude": 41.314352,
+        "longitude": 69.255611,
+        "value": 61.46639785
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 68.79932524
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 73.14564885
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 69.11545699
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 50.23476483
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 75.20107527
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 68.85954198
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 73.23743219
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 54.52453372
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 63.58902778
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 46.96802168
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 31.89375
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 39.33145161
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 57.34662162
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 39.96912651
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 46.26185984
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 40.66631016
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 55.21395664
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 46.9548433
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 42.58548387
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 52.42056834
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 53.21749644
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 57.10635135
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 35.34022504
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 38.77287129
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 39.20363392
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 44.0254386
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 46.93454301
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 44.82168142
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 46.43024194
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 39.09685629
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 53.5952957
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 38.99341398
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 48.34694444
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 45.50967742
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 36.91809117
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Manama",
+        "latitude": 26.222195,
+        "longitude": 50.586896,
+        "value": 35.7739427
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 0
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 73.7897712
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 73.93491379
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 43.67571235
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 27.75669958
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 23.64258503
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 23.13736111
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 21.56656891
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 25.2247505
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 26.7641791
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 54.09929279
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 92.53194444
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Karachi",
+        "latitude": 25.033774,
+        "longitude": 67.213102,
+        "value": 92.30793011
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 33.38546433
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 52.44255952
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 85.74274194
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 65.71955307
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 62.01054264
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 48.77458333
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 43.54972145
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 32.74447439
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 27.11555556
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 41.05185695
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 74.41416667
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 42.02196765
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 53.08888889
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 56.70907738
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 53.14341398
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 52.66972222
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 42.95420054
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 35.39555556
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 29.83044655
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 19.0232747
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 34.38114525
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 41.22807018
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 46.28041667
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 46.11115591
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 60.11359354
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 62.58930636
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 35.10927419
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 33.25666667
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 43.19487871
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 40.04623955
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 34.96722455
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 24.5811908
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 22.03763889
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 41.16135135
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 39.72150838
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Beijing",
+        "latitude": 39.910785,
+        "longitude": 116.398868,
+        "value": 29.3063172
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 224.445895
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 121.651468
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 82.37405914
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 71.58529412
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 72.0433518
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 70.11448468
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 38.19661705
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 31.8124424
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 37.28925477
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 112.9019471
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 181.7738028
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 208.0239247
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 185.7664402
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 146.4170854
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 71.67861842
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 75.12833333
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 92.11320755
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 56.93640227
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 44.03031123
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 31.40473613
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 36.57166667
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 110.6869029
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 205.3162465
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 207.686828
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 153.3117251
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 118.8130747
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 52.89811828
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 40.71555556
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 50.5077957
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 42.16041667
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 30.26599462
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 21.17445946
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 43.83972222
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 120.0850806
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 201.6961003
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "New Delhi",
+        "latitude": 28.615109,
+        "longitude": 77.228529,
+        "value": 195.6185484
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 75.65079086
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 69.45458861
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 47.65301724
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 40.04134078
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 20.07378378
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 30.14025974
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 21.14910072
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 28.2861186
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 29.7522409
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 41.40405954
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 53.72036517
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 33.68763441
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 46.82610442
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 66.8180867
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 82.62075984
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 54.20108696
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 68.36187683
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 48.77317073
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 45.59456825
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 37.26989247
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 34.94289733
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 30.10739247
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 25.04040816
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 28.39837278
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 33.66236413
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 49.59605078
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Hanoi",
+        "latitude": 21.025861,
+        "longitude": 105.833641,
+        "value": 62.79296346
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 226.3009459
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 123.3124251
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 81.83145161
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 42.18694268
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 32.840553
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 41.08024263
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 30.69011194
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 31.56854962
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 43.40619835
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 74.39192825
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 140.4159226
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 163.370725
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 185.7601707
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 111.6337798
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 62.82432796
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 34.37013889
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 33.91908178
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 19.61457726
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 17.1433281
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 15.81606887
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 18.0872905
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 53.97474048
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 152.8121107
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 151.5455285
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 159.127248
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 125.61443
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 61.12567204
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 28.05625
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 16.55698925
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 14.02472222
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 12.53040541
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 11.89147727
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 14.11032967
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 36.57607527
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 102.4286111
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Kolkata",
+        "latitude": 22.583506,
+        "longitude": 88.362412,
+        "value": 193.3138211
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 56.46256881
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 38.21486486
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 21.67563025
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 20.09301075
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 17.64776536
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 26.19086022
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 22.54256259
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 24.61507064
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 27.25282258
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 76.95368567
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 60.79153226
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 64.18305322
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 32.59217391
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 24.72918919
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 8.306364922
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 5.815268226
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 7.956017192
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 4.386065574
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 6.639594595
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 7.691944444
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 21.20188172
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 53.41069444
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Bishkek",
+        "latitude": 42.871113,
+        "longitude": 74.588483,
+        "value": 117.5425926
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 51.20286104
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 37.99686099
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 32.17858117
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 22.84568528
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 22.24897361
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 20.92834646
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 21.85887097
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 19.01693548
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 22.76848739
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 30.8315047
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 43.84713656
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 48.13817204
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 43.82871148
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 40.16792169
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 39.52042254
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 22.32958333
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 16.87112069
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 12.41287554
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 13.18789116
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 10.40312076
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 13.28851455
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 16.60384615
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 27.13957143
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 28.56710335
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 34.56919946
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 38.21287988
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 30.24054054
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 14.99900427
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 12.68333333
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 10.29430556
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 10.87104137
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 8.819864865
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 9.743438914
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 13.65540541
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 22.04111111
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Colombo",
+        "latitude": 6.92745,
+        "longitude": 79.871905,
+        "value": 25.52876344
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 37.4598513
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 49.44573864
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 73.00739247
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 87.6697274
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 43.79703104
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 75.43944444
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 75.44879032
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 73.37065949
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 39.39912409
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 29.13346774
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 24.01013889
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 27.32242091
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 39.32444444
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 31.34121622
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 59.04407008
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 53.35541667
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 50.84650538
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 99.06083333
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Dushanbe",
+        "latitude": 38.556541,
+        "longitude": 68.774522,
+        "value": 113.1473118
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 141.551487
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 89.23253205
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 28.30510367
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 18.32927757
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 20.11535088
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 23.01297602
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 11.53053435
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 9.54931694
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 19.93071529
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 41.93802228
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 118.2729875
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 218.9161721
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 226.6039394
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 125.7543413
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 57.05728022
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 27.42535211
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 16.03658537
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 24.14427374
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 14.82760055
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 16.15680272
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 17.16326531
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 32.03765517
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 65.99708333
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 127.6140033
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 175.6357625
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 105.0016484
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 36.96170839
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 22.5519802
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 12.79539919
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 15.54444444
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 12.31440217
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 9.524501992
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 18.42015504
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 34.47306273
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 45.87259953
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Ulaanbaatar",
+        "latitude": 47.898121,
+        "longitude": 106.895901,
+        "value": 138.3418708
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 86.29380888
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 91.22270059
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 87.40918919
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 58.83708333
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 40.13481183
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 30.50416667
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 10.33289037
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 10.97479784
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 17.29047619
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 35.50607143
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 58.69902507
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 81.06789773
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 87.18627187
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 58.07623457
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 62.96263911
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 50.78928047
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 62.46775068
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 27.45791667
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 14.02692308
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 11.62466568
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 12.46180556
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 30.35029851
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 52.7075
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 69.84049248
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 81.05176651
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 74.92227011
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 34.71182796
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 47.07861111
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 24.19588477
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 10.36126761
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 7.959811828
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 4.557489879
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 9.904895105
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 22.44110787
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 46.03187135
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Kathmandu",
+        "latitude": 27.711995,
+        "longitude": 85.329394,
+        "value": 69.32096774
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 14.99317212
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 24.22604167
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 25.54830853
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 35.36125
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 49.80280899
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 42.54555556
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 56.01922043
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 47.75853293
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 40.88466948
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 45.56424731
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 39.87777778
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 25.80795148
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 21.18993197
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 29.425
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 24.63753388
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 35.61138889
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 38.39837997
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 57.32041667
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 56.69086022
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 43.95483871
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 47.22781955
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 47.08326586
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 41.59596542
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 37.02837838
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 26.20672948
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 23.90648415
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 28.33763441
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 32.92729805
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 32.80054054
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 48.38138889
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 46.38346774
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 44.57004049
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 41.00362117
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 36.38825758
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 34.09083333
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Jakarta",
+        "latitude": -6.215243,
+        "longitude": 106.847723,
+        "value": 12.95537634
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 54.88579882
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 48.49389881
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 49.61619433
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 52.22583333
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 59.03682065
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 65.50027778
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 89.05364341
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 61.43148649
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 53.51806723
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 42.39166667
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 27.03751914
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 32.5125
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 45.63478261
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 31.85597484
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 37.48561644
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 39.03939394
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 53.60014368
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 61.48111111
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 58.01418919
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 63.68351648
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 55.68254211
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 50.95492958
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 19.91576355
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 24.59505582
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 19.77631225
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 35.50765896
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 33.43360768
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 31.00321229
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 41.65846774
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 46.22922078
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 43.29283784
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 39.08896552
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 37.75944444
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 26.40260274
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 28.77276536
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Dubai",
+        "latitude": 25.104523,
+        "longitude": 55.22324,
+        "value": 23.8905914
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 15.88767606
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 9.241823444
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 8.144476744
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 3.88480826
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 22.49713467
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 23.26248313
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 34.42967651
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 53.04435484
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 48.82139973
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 50.62376812
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 59.13561828
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 39.29958333
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 25.74771505
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 9.207422969
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 8.861217949
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 8.620325203
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 12.57772989
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 15.16978022
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 28.51222222
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Vientiane",
+        "latitude": 17.969898,
+        "longitude": 102.627736,
+        "value": 40.28991935
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 2.475609756
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 37.67948718
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 44.84472222
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 54.84647696
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 72.96741573
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 197.9066768
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 79.58785358
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 73.01436782
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 44.63333333
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 26.4725
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 18.04009146
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 28.03541667
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 23.8561828
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 33.03965054
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 37.84097222
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 57.08481183
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 131.8214794
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Kabul",
+        "latitude": 34.548537,
+        "longitude": 69.184676,
+        "value": 160.6678994
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 42.6858681
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 42.19895833
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 41.07419355
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 47.70728291
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 45.41373938
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 58.14671329
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 79.58319559
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 61.08561828
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 55.1948468
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 42.04756757
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 31.97355517
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 30.93155556
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 42.9886921
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 33.86686747
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 45.52717391
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 38.103207
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 57.43508065
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 60.34619718
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 59.17956989
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 57.87769679
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 52.27834037
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 49.81742958
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 13.48540373
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 14.42166405
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 13.1375848
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 24.22083333
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 25.36196237
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 19.07933042
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 30.62755376
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 32.86292135
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 36.77997312
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 33.21384409
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 30.45611111
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 17.60900538
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 22.91643059
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Abudhabi",
+        "latitude": 24.376825,
+        "longitude": 54.577112,
+        "value": 15.33227147
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 202.6143505
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 161.0300595
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 109.237741
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 70.4507365
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 43.38450899
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 35.42634561
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 30.19356643
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 36.21852792
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 130.820904
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 152.7986072
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 181.8051491
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 177.2744048
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 122.5907258
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 67.80417827
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 53.7240634
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 29.66717877
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 26.99233871
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 25.79084791
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 35.54194444
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 51.7453505
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 91.93319444
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 146.0396505
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 179.8187079
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 158.234964
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 96.7194332
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 52.23944444
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 45.18188406
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 33.45972222
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 24.6926491
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 26.18043478
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 34.35763889
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 57.36653226
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 96.36671429
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Dhaka",
+        "latitude": 23.790139,
+        "longitude": 90.426359,
+        "value": 178.2219086
+    },
+    {
+        "year": 2018,
+        "month": "Jan",
+        "year_month": "2018-01-01",
+        "year_month_id": 1,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Feb",
+        "year_month": "2018-02-01",
+        "year_month_id": 2,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Mar",
+        "year_month": "2018-03-01",
+        "year_month_id": 3,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Apr",
+        "year_month": "2018-04-01",
+        "year_month_id": 4,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "May",
+        "year_month": "2018-05-01",
+        "year_month_id": 5,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jun",
+        "year_month": "2018-06-01",
+        "year_month_id": 6,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Jul",
+        "year_month": "2018-07-01",
+        "year_month_id": 7,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Aug",
+        "year_month": "2018-08-01",
+        "year_month_id": 8,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Sep",
+        "year_month": "2018-09-01",
+        "year_month_id": 9,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Oct",
+        "year_month": "2018-10-01",
+        "year_month_id": 10,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Nov",
+        "year_month": "2018-11-01",
+        "year_month_id": 11,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2018,
+        "month": "Dec",
+        "year_month": "2018-12-01",
+        "year_month_id": 12,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Jan",
+        "year_month": "2019-01-01",
+        "year_month_id": 13,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Feb",
+        "year_month": "2019-02-01",
+        "year_month_id": 14,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Mar",
+        "year_month": "2019-03-01",
+        "year_month_id": 15,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "Apr",
+        "year_month": "2019-04-01",
+        "year_month_id": 16,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 0
+    },
+    {
+        "year": 2019,
+        "month": "May",
+        "year_month": "2019-05-01",
+        "year_month_id": 17,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 108.6934307
+    },
+    {
+        "year": 2019,
+        "month": "Jun",
+        "year_month": "2019-06-01",
+        "year_month_id": 18,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 86.97639665
+    },
+    {
+        "year": 2019,
+        "month": "Jul",
+        "year_month": "2019-07-01",
+        "year_month_id": 19,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 57.63857527
+    },
+    {
+        "year": 2019,
+        "month": "Aug",
+        "year_month": "2019-08-01",
+        "year_month_id": 20,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 55.09153226
+    },
+    {
+        "year": 2019,
+        "month": "Sep",
+        "year_month": "2019-09-01",
+        "year_month_id": 21,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 68.24106892
+    },
+    {
+        "year": 2019,
+        "month": "Oct",
+        "year_month": "2019-10-01",
+        "year_month_id": 22,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 150.7346829
+    },
+    {
+        "year": 2019,
+        "month": "Nov",
+        "year_month": "2019-11-01",
+        "year_month_id": 23,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 202.5342618
+    },
+    {
+        "year": 2019,
+        "month": "Dec",
+        "year_month": "2019-12-01",
+        "year_month_id": 24,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 250.0270161
+    },
+    {
+        "year": 2020,
+        "month": "Jan",
+        "year_month": "2020-01-01",
+        "year_month_id": 25,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 182.8422402
+    },
+    {
+        "year": 2020,
+        "month": "Feb",
+        "year_month": "2020-02-01",
+        "year_month_id": 26,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 77.3204023
+    },
+    {
+        "year": 2020,
+        "month": "Mar",
+        "year_month": "2020-03-01",
+        "year_month_id": 27,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 73.03672087
+    },
+    {
+        "year": 2020,
+        "month": "Apr",
+        "year_month": "2020-04-01",
+        "year_month_id": 28,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 40.67927171
+    },
+    {
+        "year": 2020,
+        "month": "May",
+        "year_month": "2020-05-01",
+        "year_month_id": 29,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 62.00121951
+    },
+    {
+        "year": 2020,
+        "month": "Jun",
+        "year_month": "2020-06-01",
+        "year_month_id": 30,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 63.86128134
+    },
+    {
+        "year": 2020,
+        "month": "Jul",
+        "year_month": "2020-07-01",
+        "year_month_id": 31,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 43.57916667
+    },
+    {
+        "year": 2020,
+        "month": "Aug",
+        "year_month": "2020-08-01",
+        "year_month_id": 32,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 29.37253045
+    },
+    {
+        "year": 2020,
+        "month": "Sep",
+        "year_month": "2020-09-01",
+        "year_month_id": 33,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 64.07847222
+    },
+    {
+        "year": 2020,
+        "month": "Oct",
+        "year_month": "2020-10-01",
+        "year_month_id": 34,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 149.9858871
+    },
+    {
+        "year": 2020,
+        "month": "Nov",
+        "year_month": "2020-11-01",
+        "year_month_id": 35,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 229.6855556
+    },
+    {
+        "year": 2020,
+        "month": "Dec",
+        "year_month": "2020-12-01",
+        "year_month_id": 36,
+        "city": "Lahore",
+        "latitude": 31.495746,
+        "longitude": 74.354293,
+        "value": 242.2193863
+    }
+]

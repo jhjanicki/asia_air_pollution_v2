@@ -1,403 +1,607 @@
 <!doctype html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-      <title>Air pollution map</title>
-      <meta name="description" content="">
-      <meta name="author" content="Julia Janicki">
-      <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-      <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700&display=swap" rel="stylesheet">
-      <script src='https://api.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js'></script>
-      <link href='https://api.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css' rel='stylesheet' />
-      <link href="./style.css" rel="stylesheet">
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-      <style>
-        .switch-field {
-          display: flex;
-          margin-bottom: -5px;
-          margin-left: -10px;
-          overflow: hidden;
-        }
 
-        .switch-field input {
-          position: absolute !important;
-          clip: rect(0, 0, 0, 0);
-          height: 1px;
-          width: 1px;
-          border: 0;
-          overflow: hidden;
-        }
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <title>Air pollution map</title>
+  <meta name="description" content="">
+  <meta name="author" content="Julia Janicki">
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700&display=swap" rel="stylesheet">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css' rel='stylesheet' />
+  <link href="./style.css" rel="stylesheet">
+  <style>
+    .switch-field {
+      display: flex;
+      margin-bottom: -5px;
+      margin-left: -10px;
+      overflow: hidden;
+    }
 
-        .switch-field label {
-          background-color: #e4e4e4;
-          color: rgba(0, 0, 0, 0.6);
-          font-size: 14px;
-          line-height: 1;
-          text-align: center;
-          padding: 8px 16px;
-          margin-right: -1px;
-          border: 1px solid rgba(0, 0, 0, 0.2);
-          transition: all 0.1s ease-in-out;
-        }
+    .switch-field input {
+      position: absolute !important;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      width: 1px;
+      border: 0;
+      overflow: hidden;
+    }
 
-        .switch-field label:hover {
-          cursor: pointer;
-        }
+    .switch-field label {
+      background-color: #e4e4e4;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+      line-height: 1;
+      text-align: center;
+      padding: 8px 16px;
+      margin-right: -1px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      transition: all 0.1s ease-in-out;
+    }
 
-        .switch-field input:checked + label {
-          background-color: #9ebcda;
-          box-shadow: none;
-        }
+    .switch-field label:hover {
+      cursor: pointer;
+    }
 
-        .switch-field label:first-of-type {
-          border-radius: 4px 0 0 4px;
-        }
+    .switch-field input:checked+label {
+      background-color: #9ebcda;
+      box-shadow: none;
+    }
 
-        .switch-field label:last-of-type {
-          border-radius: 0 4px 4px 0;
-        }
+    .switch-field label:first-of-type {
+      border-radius: 4px 0 0 4px;
+    }
 
-        #linechart{
-          margin-left: -15px;
-          margin-top: -20px;
-        }
-      
-        #legendTitle{
-          margin-left: -10px;
-          margin-bottom: 5px;
-        }
-        .legendText{
-          font-size:12px;
-        }
+    .switch-field label:last-of-type {
+      border-radius: 0 4px 4px 0;
+    }
 
-        /* Tooltip text */
-        .tooltiptext {
-          visibility: hidden;
-          width: 250px;
-          margin-top: 8px;
-          margin-left: 5px;
-          background-color: #2E525E;
-          color: #fff;
-          text-align: center;
-          padding: 5px 0;
-          border-radius: 6px;
-          position: absolute;
-          z-index: 1;
-        }
+    #linechart {
+      margin-left: -15px;
+      margin-top: -20px;
+    }
 
-        /* Show the tooltip text when you mouse over the tooltip container */
-        #footnote:hover .tooltiptext {
-          visibility: visible;
-        }
+    #legendTitle {
+      margin-left: -10px;
+      margin-bottom: 5px;
+    }
 
-        .info img{
-          width:20px;
-          height:20px;
-          margin-top: -10px;
-          margin-left: 5px;
-        }
+    .legendText {
+      font-size: 12px;
+    }
 
-        .info img:hover{
-          cursor:pointer;
-        }
+    /* Tooltip text */
+    .tooltiptext {
+      visibility: hidden;
+      width: 250px;
+      margin-top: 8px;
+      margin-left: 5px;
+      background-color: #2E525E;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+    }
 
-        #source{
-          position:absolute;
-          left:44px;
-          bottom:8px;
-          z-index: 20;
-          font-size: 12px;
-        }
+    /* Show the tooltip text when you mouse over the tooltip container */
+    #footnote:hover .tooltiptext {
+      visibility: visible;
+    }
 
-        #source > a{
-          color:#2954a0;
-        }
+    .info img {
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      margin-left: 5px;
+    }
 
-        #source >a:hover{
-          color:#cb181d;
-          cursor: pointer;
-        }
+    .info img:hover {
+      cursor: pointer;
+    }
 
-        #lineInstruction{
-          color:#cb181d
-        }
+    #source {
+      position: absolute;
+      left: 44px;
+      bottom: 8px;
+      z-index: 20;
+      font-size: 12px;
+    }
 
-        #source2{
-            display: none;
-        }
+    #source>a {
+      color: #2954a0;
+    }
 
-        @media screen and (max-width: 450px) {
-          #chart,#legend1,#legend2,#source{
-            display: none;
-          }
+    #source>a:hover {
+      color: #cb181d;
+      cursor: pointer;
+    }
 
-          #source2{
-            margin-top: 10px;
-            display: inherit;
-          }
+    #lineInstruction {
+      color: #cb181d
+    }
 
-          .mapboxgl-popup {
-            transform:none !important;
-            top: 20px;
-            left: 0;
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
-          }
+    #source2 {
+      display: none;
+    }
 
-          .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
-          .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
-          .mapboxgl-popup-anchor-center .mapboxgl-popup-tip,
-          .mapboxgl-popup-anchor-left .mapboxgl-popup-tip,
-          .mapboxgl-popup-anchor-right .mapboxgl-popup-tip,
-          .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip,
-          .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
-          .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip,
-          .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip{
-              display:none !important;
-          }
+    @media screen and (max-width: 450px) {
 
-          .tooltiptext {
-            margin-left: -200px;
-          }
-        }
-  
-      </style>
-   </head>
-   <body>
-      <div id='map'></div>
-      <div id='logo'>
+      #chart,
+      #legend1,
+      #legend2,
+      #source {
+        display: none;
+      }
+
+      #source2 {
+        margin-top: 5px;
+        display: inherit;
+      }
+
+      .mapboxgl-popup {
+        transform: none !important;
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+      .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+      .mapboxgl-popup-anchor-center .mapboxgl-popup-tip,
+      .mapboxgl-popup-anchor-left .mapboxgl-popup-tip,
+      .mapboxgl-popup-anchor-right .mapboxgl-popup-tip,
+      .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip,
+      .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+      .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip,
+      .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip {
+        display: none !important;
+      }
+
+      .tooltiptext {
+        margin-left: -200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id='map'></div>
+  <div id='logo'>
+  </div>
+  <div id='console'>
+    <!-- <div class="verticalLine"> -->
+    <span id="toggleConsole">
+      <img src="./img/toggle.png" />
+    </span>
+    <div class="itemWrapper" id="titleWrapper">
+      <h1 class="item" id='title'>Air pollution across Asia</h1>
+      <div class="item info" id="footnote">
+        <img src="img/info.png" />
+        <span class="tooltiptext">Monthly PM 2.5 averages for each Asian city were calculated by The Third Pole based on
+          hourly PM 2.5 NowCast data available on the US Air Quality Index website, which monitors air quality at US
+          embassies and consulates in each city. In some months, data was not available or readings returned invalid
+          values.</span>
       </div>
-      <div id='console'>
-         <!-- <div class="verticalLine"> -->
-            <span id="toggleConsole">
-            <img src="./img/toggle.png" />
-            </span>
-            <div class="itemWrapper" id="titleWrapper">
-              <h1 class="item" id='title'>Air pollution across Asia</h1> 
-              <div class="item info" id="footnote">
-                <img src="img/info.png" />
-                <span class="tooltiptext">Monthly PM 2.5 averages for each Asian city were calculated by The Third Pole based on hourly PM 2.5 NowCast data available on the US Air Quality Index website, which monitors air quality at US embassies and consulates in each city. In some months, data was not available or readings returned invalid values.</span>
-            </div>
-           </div>
-            <!-- <p>Monthly PM 2.5 averages for each Asian city were calculated by The Third Pole based on hourly PM 2.5 NowCast data available on the US Air Quality Index website, which monitors air quality at US embassies and consulates in each city. In some months, data was not available or readings returned invalid values.</p>    -->
-            <!-- <div class="switch-field">
-              <input type="radio" id="radio-three" name="switch-two" value="2018" checked/>
-              <label for="radio-three">2018</label>
-              <input type="radio" id="radio-four" name="switch-two" value="2019" />
-              <label for="radio-four">2019</label>
-              <input type="radio" id="radio-five" name="switch-two" value="2020" />
-              <label for="radio-five">2020</label>
-            </div>         
-            <div class="itemWrapper" id="legend1">
-                <p id="legendTitle" class="legendText"> Average air quality index (ug/m3)</p>
-                <div class="item">0</div>
-                <img class="item" id="legend" src="./img/legend2.png" />
-                <div class="item">90+</div>
-            </div> -->
-            <div class='itemWrapper' id="legend2">
-                  <p class='item legendText'>PM 2.5 levels</p>
-                   <img id="minCircle" class='item' src="./img/legend.svg" />
-                   <p id="minCircleVal" class='item'></p>
-                   <img id="maxCircle" class='item' src="./img/legend.svg" />
-                   <p id="maxCircleVal" class='item'></p>
-             </div>
-              <div class='session' id='sliderbar'>
-                 <input id='slider' class='row' type='range' min='0' max='' step='1' value='' />
-                 <div id="wrapper">
-                    <p id="start"></p>
-                    <p id="end"></p>
-                 </div>
-              </div>
-              <div id="playpause" class="itemWrapper">
-                <div id="play" class="item">
-                    <img src="img/play.png" />
-                </div>
-                <div id="stop" class="item">
-                    <img src="img/pause.png" />
-                </div>
-                <p id="yearDisplay"class="item">Month/Year: <span id="selectedYear">January 2018</span></p>
-             </div>
-             <p id="lineInstruction">Click on the blue dots to find out more about each city's air quality between 2018 and 2020</p>
-             <div id="linechart"></div>
-             <div id="selectedCity"></div>
-             <p id="source2">Source: <a href="https://www.airnow.gov/international/us-embassies-and-consulates/">US Air Quality Index</a> and <a href="https://www.iqair.com/">World Air Quality</a></p>
-
-         <!-- </div> -->
-         <!-- end line -->
+    </div>
+    <div class="switch-field">
+      <input type="radio" id="radio-three" name="switch-two" value="2018" checked />
+      <label for="radio-three">2018</label>
+      <input type="radio" id="radio-four" name="switch-two" value="2019" />
+      <label for="radio-four">2019</label>
+      <input type="radio" id="radio-five" name="switch-two" value="2020" />
+      <label for="radio-five">2020</label>
+    </div>
+    <div class="itemWrapper" id="legend1">
+      <p id="legendTitle" class="legendText"> Average air quality index (ug/m3)</p>
+      <div class="item">0</div>
+      <img class="item" id="legend" src="./img/legend2.png" />
+      <div class="item">90+</div>
+    </div>
+    <div class='itemWrapper' id="legend2">
+      <p class='item legendText'>PM 2.5 levels</p>
+      <img id="minCircle" class='item' src="./img/legend.svg" />
+      <p id="minCircleVal" class='item'></p>
+      <img id="maxCircle" class='item' src="./img/legend.svg" />
+      <p id="maxCircleVal" class='item'></p>
+    </div>
+    <div class='session' id='sliderbar'>
+      <input id='slider' class='row' type='range' min='0' max='' step='1' value='' />
+      <div id="wrapper">
+        <p id="start"></p>
+        <p id="end"></p>
       </div>
-
-      <div id="chart">
+    </div>
+    <div id="playpause" class="itemWrapper">
+      <div id="play" class="item">
+        <img src="img/play.png" />
       </div>
-      <p id="source">Source: <a href="https://www.airnow.gov/international/us-embassies-and-consulates/">US Air Quality Index</a> and <a href="https://www.iqair.com/">World Air Quality</a></p>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.14.2/d3.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
-      <script src='./textures.min.js'></script>
-      <script src='./data/lineDataOverall.js'></script>
-      <script src='./data/lineDataAll.js'></script>
-      <script src='./data/countryData.js'></script>
+      <div id="stop" class="item">
+        <img src="img/pause.png" />
+      </div>
+      <p id="yearDisplay" class="item">Month/Year: <span id="selectedYear">January 2018</span></p>
+    </div>
+    <p id="lineInstruction">Click on the blue dots to find out more about each city's air quality between 2018 and 2020
+    </p>
+    <div id="linechart"></div>
+    <div id="selectedCity"></div>
+    <p id="source2">Source: <a href="https://www.airnow.gov/international/us-embassies-and-consulates/">US Air Quality
+        Index</a> and <a href="https://www.iqair.com/">World Air Quality</a></p>
 
-      <script>
+    <!-- </div> -->
+    <!-- end line -->
+  </div>
 
-      //******************
-      // Responsive setup
-      //******************
+  <div id="chart">
+  </div>
+  <p id="source">Source: <a href="https://www.airnow.gov/international/us-embassies-and-consulates/">US Air Quality
+      Index</a> and <a href="https://www.iqair.com/">World Air Quality</a></p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.14.2/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+  <script src='./textures.min.js'></script>
+  <script src='./data/lineDataOverall.js'></script>
+  <script src='./data/lineDataAll.js'></script>
+  <script src='./data/countryData.js'></script>
+  <script src='./data/countryCircleData.js'></script>
+  <script src='./data/cityCircleData.js'></script>
 
-      var windowWidth = $(window).width();
-      var windowHeight = $(window).height();
-      var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-      var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  <script>
 
-    
-      var medium = false;
-      var small = false;
-      var xs = false;
-      var mobile = false;
-      var iphone = false;
-      var safari = false;
+    //******************
+    // Responsive setup
+    //******************
 
-      $(window).resize(function() {
-          if (windowWidth != $(window).width() || windowHeight != $(window).height()) {
-              location.reload();
-              return;
-          }
-      });
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+    var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
-      if ( viewportWidth < 850 && viewportWidth >= 700) {
-          medium = true;
+
+    var medium = false;
+    var small = false;
+    var xs = false;
+    var mobile = false;
+    var iphone = false;
+    var safari = false;
+
+    $(window).resize(function () {
+      if (windowWidth != $(window).width() || windowHeight != $(window).height()) {
+        location.reload();
+        return;
       }
+    });
 
-      if ( viewportWidth < 700 && viewportWidth >= 600) {
-          small = true;
+    if (viewportWidth < 850 && viewportWidth >= 700) {
+      medium = true;
+    }
+
+    if (viewportWidth < 700 && viewportWidth >= 600) {
+      small = true;
+    }
+
+    if (viewportWidth < 600 && viewportWidth >= 450) {
+      xs = true;
+    }
+
+    if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      mobile = true;
+    }
+
+
+    if (/iPhone/i.test(navigator.userAgent)) {
+      iphone = true;
+    } else {
+      //console.log(/iPhone/i.test(navigator.userAgent))
+    }
+
+    //if Safari
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf('safari') != -1) {
+      if (ua.indexOf('chrome') > -1) { // Chrome
+      } else { // Safari
+        safari = true;
       }
-
-      if ( viewportWidth < 600 && viewportWidth >= 450) {
-          xs = true;
-      }
-
-      if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-          mobile = true;
-      }
+    }
 
 
-      if (/iPhone/i.test(navigator.userAgent)) {
-          iphone = true;
-      } else {
-          //console.log(/iPhone/i.test(navigator.userAgent))
-      }
+    //***********
+    // SVG setup
+    //***********
 
-      //if Safari
-      var ua = navigator.userAgent.toLowerCase();
-      if (ua.indexOf('safari') != -1) {
-          if (ua.indexOf('chrome') > -1) { // Chrome
-          } else { // Safari
-              safari = true;
-          }
-      }
-
-
-      //***********
-      // SVG setup
-      //***********
-
-      var width = 800,
-          height = 220,
-          margin = {
-              top: 40,
-              right: 20,
-              bottom: 40,
-              left: 40
-          };
-
-      if(medium){
-        width = 700
-      }
-
-      if(small){
-        width = 600;
-      }
-
-      if(xs){
-        width = 450;
-      }
-
-
-      var svg = d3.select("#chart").append("svg").attr("id","svg").attr("width", width).attr("height", height);
-
-      //***********
-      // SVG2 setup
-      //***********
-
-      var margin2 = {top:10, right:15, bottom:30,left:15},
-             width2 = $("#linechart").parent().width(),
-             height2 = (mobile||xs)?180:200;
-
-      var svg2 = d3.select('#linechart')
-              .append("svg").attr("id","svg2")
-              .attr("width", width2)
-              .attr("height", height2)
-              .append("g").attr("class","g")
-              .attr("transform", "translate("+margin2.left+","+margin2.top+")");
-
-      //**********
-      // Map setup
-      //**********
-
-      mapboxgl.accessToken = 'pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A';
-
-      var map;
-      var popup;
-
-      // status
-      var geoJsonData = {
-          'type': 'FeatureCollection',
-          'features': []
+    var width = 800,
+      height = 220,
+      margin = {
+        top: 40,
+        right: 20,
+        bottom: 40,
+        left: 40
       };
 
+    if (medium) {
+      width = 700
+    }
 
-      //console.log(countryData)
+    if (small) {
+      width = 600;
+    }
 
-      if (mobile) {
+    if (xs) {
+      width = 450;
+    }
 
-          map = new mapboxgl.Map({
-              container: 'map', // container element id
-              style: 'mapbox://styles/jhjanicki/ckr6dktrk2au017o0c9m6yr82',
-              center: [78.217997,24.403233], // initial map center in [lon, lat]
-              zoom: 1,
-              minZoom: 1
-          });
 
-      } else {
+    var svg = d3.select("#chart").append("svg").attr("id", "svg").attr("width", width).attr("height", height);
 
-          map = new mapboxgl.Map({
-              container: 'map', // container element id
-              style: 'mapbox://styles/jhjanicki/ckr6dktrk2au017o0c9m6yr82',
-              center: [78.217997,24.403233], // initial map center in [lon, lat]
-              zoom: 3,
-              minZoom: 2
-          });
+    //***********
+    // SVG2 setup
+    //***********
 
+    var margin2 = { top: 10, right: 15, bottom: 30, left: 15 },
+      width2 = $("#linechart").parent().width(),
+      height2 = (mobile || xs) ? 180 : 200;
+
+    var svg2 = d3.select('#linechart')
+      .append("svg").attr("id", "svg2")
+      .attr("width", width2)
+      .attr("height", height2)
+      .append("g").attr("class", "g")
+      .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
+
+    //**********
+    // Map setup
+    //**********
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamhqYW5pY2tpIiwiYSI6Il9vb1ZlWnMifQ.zJie3Sr8zh3h5rR8IBMB2A';
+
+    var map;
+    var popup;
+
+    // cities
+    var geoJsonData = {
+      'type': 'FeatureCollection',
+      'features': []
+    };
+
+    //countries
+    var geoJsonDataCountry = {
+      'type': 'FeatureCollection',
+      'features': []
+    };
+
+
+    //console.log(countryData)
+
+    if (mobile) {
+
+      map = new mapboxgl.Map({
+        container: 'map', // container element id
+        style: 'mapbox://styles/jhjanicki/ckr6dktrk2au017o0c9m6yr82',
+        center: [78.217997, 24.403233], // initial map center in [lon, lat]
+        zoom: 1,
+        minZoom: 1
+      });
+
+    } else {
+
+      map = new mapboxgl.Map({
+        container: 'map', // container element id
+        style: 'mapbox://styles/jhjanicki/ckr6dktrk2au017o0c9m6yr82',
+        center: [78.217997, 24.403233], // initial map center in [lon, lat]
+        zoom: 3,
+        minZoom: 2
+      });
+
+    }
+
+
+    function createCountryCirclesData() {
+
+      countryCircleData.forEach(function (row) {
+
+        // to deal with null lat lon values
+        var lat;
+        var lon;
+
+        if (row.longitude == null || row.longitude == '' || row.latitude == null || row.latitude == '') {
+          //console.log(row)
+          lon = null;
+          lat = null;
+        } else {
+          lon = +row.longitude;
+          lat = +row.latitude;
+        }
+
+        // to deal with null lat lon values
+
+        var feature = {
+          'type': 'Feature',
+          'properties': {
+            'longitude': lon,
+            'latitude': lat,
+            'country': row.country,
+            'value2020': +row.value2020,
+            'value2019': +row.value2019,
+            'value2018': +row.value2018
+          },
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [+row.longitude, +row.latitude],
+          }
+        };
+
+
+        if (lon != null && lat != null && !isNaN(lon) && !isNaN(lat)) {
+          geoJsonDataCountry['features'].push(feature);
+        }
+
+      });
+
+    }
+
+    function createCityCirclesData() {
+
+      cityCircleData.forEach(function (row) {
+
+        // to deal with null lat lon values
+        var lat;
+        var lon;
+
+        if (row.longitude == null || row.longitude == '' || row.latitude == null || row.latitude == '') {
+          //console.log(row)
+          lon = null;
+          lat = null;
+        } else {
+          lon = +row.longitude;
+          lat = +row.latitude;
+        }
+
+        // to deal with null lat lon values
+
+        var feature = {
+          'type': 'Feature',
+          'properties': {
+            'longitude': lon,
+            'latitude': lat,
+            'year': +row.year,
+            'month': row.month,
+            'year_month': row.year_month,
+            'year_month_id': +row.year_month_id,
+            'city': row.city,
+            'value': +row.value,
+            'date': parser(row.year_month)
+          },
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [+row.longitude, +row.latitude],
+          }
+        };
+
+
+        if (lon != null && lat != null && !isNaN(lon) && !isNaN(lat)) {
+          geoJsonData['features'].push(feature);
+        }
+
+      });
+
+    }
+
+    map.on('load', function () {
+
+      init(); // test google sheet
+      $("#toggleConsole").click(function () {
+        $("#console").toggleClass("active");
+        $("#toggleConsole img").toggleClass("flip");
+      });
+
+      $("#toggleConsole").css("top", 230);
+
+
+      if (mobile || xs) {
+        $("#console").css("height", 370);
+        $("#console").css("width", 250);
+        $("#toggleConsole").css("top", 180);
       }
 
+      var layers = map.getStyle().layers;
+      // console.log(layers)
+      //addCountryLayer();
 
-      function addCountryLayer(){
+    });
 
-        map.addSource('countries', {
-              type: 'geojson',
-              data: countryData
-            });
+    if (!mobile) {
+      map.addControl(new mapboxgl.NavigationControl());
+    }
 
-        map.addLayer({
-           'id': 'countriesfill',
-           'type': 'fill',
-           'source': 'countries',
-           'paint': {
-           'fill-color': 
-           [
+    //*****************
+    // Global variables
+    //*****************
+
+    var parser = d3.timeParse("%Y-%m-%d")
+
+    var min = 0;
+    var max = 250;
+    var yearMin = '01/2018';
+    var yearMax = '12/2020';
+    var minCircleSize = 0;
+    var maxCircleSize = mobile ? 15 : 20;
+    var maxCircleSizeCountry = mobile ? 20 : 25;
+
+    if (mobile) {
+      d3.select("#chart").style("display", "none");
+      d3.select("#legend1").style("display", "none");
+      d3.select("#legend2").style("display", "none");
+    }
+
+    var sliderMin = 1;
+    var sliderMax = 36;
+    var sliderVal = 1;
+
+    var tab1 = true;
+
+    var selectedCity = '';
+    var selectedData;
+
+    var lineClicked = false;
+
+
+    //**********
+    // Read data
+    //**********
+
+    function init() {
+
+      $('#loading').hide();
+
+
+      createCityCirclesData();
+      createCountryCirclesData();
+      //console.log(geoJsonDataCountry)
+
+      //console.log(geoJsonData)
+
+
+      //*****************************
+      // Map related global variables
+      //*****************************
+
+      var yearFilter = ["==", ["get", "year_month_id"], 1];
+
+      $("#minCircleVal").html(`9`);
+      $("#maxCircleVal").html(`${max}`);
+
+      $("#start").html(yearMin);
+      $("#end").html(yearMax);
+
+      $('#slider').prop('min', sliderMin);
+      $('#slider').prop('max', sliderMax);
+      $('#slider').prop('value', sliderVal);
+
+      var sliderValG = $("#slider").val();
+      sliderValG = parseInt(sliderValG)
+
+
+      //*************
+      // Draw circles
+      //*************
+
+
+      map.addLayer({
+        id: 'countries',
+        type: 'circle',
+        source: {
+          type: 'geojson',
+          data: geoJsonDataCountry
+        },
+        paint: {
+          "circle-color": [
             'interpolate',
             ['linear'],
             ['get', 'value2018'],
@@ -423,746 +627,589 @@
             '#67000d',
             90,
             '#49010d'
-            ],
-           'fill-opacity': 0.8
-           }
-        },'settlement-subdivision-label');
-
-        map.addLayer({
-           'id': 'countriesline',
-           'type': 'line',
-           'source': 'countries',
-           'paint': {
-           'line-color': 'black',
-           'line-opacity': 1,
-           'line-width':0.5
-           }
-        },'settlement-subdivision-label');
-      }
-
-      map.on('load', function() {
-
-          init(); // test google sheet
-          $("#toggleConsole").click(function() {
-              $("#console").toggleClass("active");
-              $("#toggleConsole img").toggleClass("flip");
-          });
-
-          $("#toggleConsole").css("top", 190);
+          ],
+          'circle-radius': maxCircleSizeCountry,
+          'circle-opacity': 0.9,
+          'circle-stroke-color': 'white',
+          'circle-stroke-width': 0
+        }
+      }, 'settlement-subdivision-label');
 
 
-          if(mobile || xs){
-            $("#console").css("height", 370);
-            $("#console").css("width", 250);
-            $("#toggleConsole").css("top", 170);
+      map.addLayer({
+        id: 'cities',
+        type: 'circle',
+        source: {
+          type: 'geojson',
+          data: geoJsonData
+        },
+        paint: {
+          "circle-color": "#2954a0",
+          'circle-radius': [
+            'interpolate',
+            ["linear"],
+            ['get', 'value'],
+            min,
+            minCircleSize,
+            max,
+            maxCircleSize
+          ],
+          'circle-opacity': 0.8,
+          'circle-stroke-color': 'white',
+          'circle-stroke-width': 1
+        }
+      });
+
+      map.setFilter('cities', yearFilter);
+
+
+      //******************
+      // Prepare D3 scales for line chart
+      //******************
+
+      var timeFormat = d3.timeFormat("%B %Y");
+
+      var xExtent = d3.extent(linedDataOverall, d => parser(d.year_month))
+      var xExtentID = d3.extent(linedDataOverall, d => d.year_month_id)
+      var yExtent = [0, 100];
+      //d3.extent(linedDataOverall, d=>d.value)
+
+      //console.log(xExtent)
+      //console.log(yExtent)
+
+      var xScale = d3.scaleTime().domain(xExtent).range([margin.left, width - margin.right]);
+      var xScaleMap = d3.scaleTime().domain(xExtent).range(xExtentID) // map dates to ids
+      var xScaleMapInvert = d3.scaleLinear().domain(xExtentID).range(xExtent) //map ids to dates
+      var yScale = d3.scaleLinear().domain(yExtent).range([height - margin.bottom, margin.top])
+
+      //console.log(timeFormat(xScaleMapInvert(34)))
+
+      var xExtent2;
+      var xExtentID2;
+      var yExtent2 = [0, 250];
+      //d3.extent(selectedData, d=>d.value)
+
+
+      var xScale2;
+      var xScaleMap2; // map dates to ids
+      var xScaleMapInvert2; //map ids to dates
+      var yScale2;
+
+      var xAxis2;
+      var yAxis2;
+
+      var texture = textures
+        .lines()
+        .size(8)
+        .strokeWidth(1)
+        .stroke("#AFAFAF");
+      svg.call(texture);
+
+      svg.append("rect")
+        .attr("class", "rect3")
+        .attr("fill", texture.url())
+        .attr('x', xScale(parser("2018-01-01")) + 1) //+1 so it won't overlap with the axis
+        .attr('y', margin.top)
+        .attr('width', xScale(parser("2019-01-01")) - xScale(parser("2018-01-01")))
+        .attr('height', height - margin.bottom - margin.top) //not sure why there's a 
+        .lower()
+
+      svg.append("rect")
+        .attr("class", "rect4")
+        .attr("fill", texture.url())
+        .attr('x', xScale(parser("2020-01-01")))
+        .attr('y', margin.top)
+        .attr('width', xScale(parser("2020-12-01")) - xScale(parser("2020-01-01")))
+        .attr('height', height - margin.bottom - margin.top) //not sure why there's a 10
+        .lower()
+
+      svg.append("text")
+        .attr('x', xScale(parser("2018-01-01")))
+        .attr('y', height - margin.bottom - 4)
+        .attr("fill", "black")
+        .text("2018")
+
+      svg.append("text")
+        .attr('x', xScale(parser("2019-01-01")))
+        .attr('y', height - margin.bottom - 4)
+        .attr("fill", "black")
+        .text("2019")
+
+      svg.append("text")
+        .attr('x', xScale(parser("2020-01-01")))
+        .attr('y', height - margin.bottom - 4)
+        .attr("fill", "black")
+        .text("2020")
+
+      svg.append("text")
+        .attr('x', xScale(parser("2018-01-01")))
+        .attr('y', margin.top + 10)
+        .attr("fill", "black")
+        .text("ug/m3")
+
+      svg.append("text")
+        .attr('x', xScale(parser("2018-01-01")))
+        .attr('y', 25)
+        .style("font-size", 16)
+        .attr("fill", "black")
+        .text("PM 2.5 monthly averages across Asia")
+
+      // Add the line
+
+      svg.append("line")
+        .attr("id", "vline")
+        .attr("x1", margin.left)
+        .attr("x2", margin.left)
+        .attr("y1", margin.top)
+        .attr("y2", height - margin.bottom)
+        .attr("fill", "none")
+        .attr("stroke", "black")
+        .attr("stroke-width", 2)
+
+      svg.append("path")
+        .datum(linedDataOverall)
+        .attr("fill", "none")
+        .attr("stroke", "#2954a0")
+        .attr("stroke-width", 1.5)
+        .attr("d", d3.line()
+          .x(function (d) { return xScale(parser(d.year_month)) })
+          .y(function (d) { return yScale(d.value) })
+        )
+
+      //**************
+      // Setup D3 axes
+      //**************
+
+      var xAxis = svg.append("g").attr("class", "x-axis")
+        .attr("transform", `translate(0, ${height - margin.bottom} )`)
+        .call(d3.axisBottom(xScale).ticks(d3.timeMonth, 3).tickFormat(d3.timeFormat('%b')))
+
+      var yAxis = svg.append("g").attr("class", "y-axis")
+        .attr("transform", `translate(${margin.left}, 0)`)
+        .call(d3.axisLeft(yScale).ticks(5));
+
+
+      //*************
+      // Timer setup
+      //*************
+
+      var myTimer;
+      d3.select("#play").on("click", function () {
+
+        clearInterval(myTimer);
+        myTimer = setInterval(function () {
+          var b = d3.select("#slider");
+          var t = (+b.property("value") + 1) % (+b.property("max") + 1);
+          if (t == 0) { t = +b.property("min"); }
+          b.property("value", t);
+          $("#slider").val(t);
+          $("#slider").trigger('change');
+          sliderValG = t;
+
+
+          yearFilter = ["==", ["get", "year_month_id"], t];
+
+
+          map.setFilter('cities', yearFilter);
+          document.getElementById('selectedYear').innerText = timeFormat(xScaleMapInvert(t));
+
+          d3.select("#vline")
+            .transition()
+            .ease(d3.easeLinear)
+            .duration(200)
+            .attr("x1", xScale(xScaleMapInvert(t)))
+            .attr("x2", xScale(xScaleMapInvert(t)));
+
+          if (lineClicked) {
+            d3.select("#vline2")
+              .transition()
+              .ease(d3.easeLinear)
+              .duration(200)
+              .attr("x1", xScale2(xScaleMapInvert2(t)))
+              .attr("x2", xScale2(xScaleMapInvert2(t)));
           }
 
-          var layers = map.getStyle().layers;
-          // console.log(layers)
-          //addCountryLayer();
+
+        }, 200);
+      });
+
+      d3.select("#stop").on("click", function () {
+        clearInterval(myTimer);
+      });
+
+
+
+
+      //**************
+      // Slider setup
+      //**************
+
+      document.getElementById('slider').addEventListener('input', function (e) {
+        //console.log(e.target.value)
+
+        var sliderVal = +e.target.value;
+        sliderValG = sliderVal;
+
+        //below is redundant in many parts, put in own function
+
+        yearFilter = ["==", ["get", "year_month_id"], sliderVal];
+
+        document.getElementById('selectedYear').innerText = timeFormat(xScaleMapInvert(sliderVal));
+
+        d3.select("#vline")
+          .transition()
+          .ease(d3.easeLinear)
+          .duration(200)
+          .attr("x1", xScale(xScaleMapInvert(sliderVal)))
+          .attr("x2", xScale(xScaleMapInvert(sliderVal)));
+
+        if (lineClicked) {
+          d3.select("#vline2")
+            .transition()
+            .ease(d3.easeLinear)
+            .duration(200)
+            .attr("x1", xScale2(xScaleMapInvert2(sliderVal)))
+            .attr("x2", xScale2(xScaleMapInvert2(sliderVal)));
+        }
+
+        map.setFilter('cities', yearFilter);
+
+      }); //end slider input
+
+
+
+      $('input[type=radio]').change(function () {
+        if (this.value == '2018') {
+          map.setPaintProperty('countries',
+            'circle-color', [
+            'interpolate',
+            ["linear"],
+            ['get', 'value2018'],
+            0,
+            '#e4e4e4',
+            1,
+            '#fff5f0',
+            10,
+            '#fee0d2',
+            20,
+            '#fcbba1',
+            30,
+            '#fc9272',
+            40,
+            '#fb6a4a',
+            50,
+            '#ef3b2c',
+            60,
+            '#cb181d',
+            70,
+            '#a50f15',
+            80,
+            '#67000d',
+            90,
+            '#49010d'
+          ])
+        }
+        else if (this.value == '2019') {
+          map.setPaintProperty('countries',
+            'circle-color', [
+            'interpolate',
+            ["linear"],
+            ['get', 'value2019'],
+            0,
+            '#e4e4e4',
+            1,
+            '#fff5f0',
+            10,
+            '#fee0d2',
+            20,
+            '#fcbba1',
+            30,
+            '#fc9272',
+            40,
+            '#fb6a4a',
+            50,
+            '#ef3b2c',
+            60,
+            '#cb181d',
+            70,
+            '#a50f15',
+            80,
+            '#67000d',
+            90,
+            '#49010d'
+          ])
+        } else {
+
+          map.setPaintProperty('countries',
+            'circle-color', [
+            'interpolate',
+            ["linear"],
+            ['get', 'value2020'],
+            0,
+            '#e4e4e4',
+            1,
+            '#fff5f0',
+            10,
+            '#fee0d2',
+            20,
+            '#fcbba1',
+            30,
+            '#fc9272',
+            40,
+            '#fb6a4a',
+            50,
+            '#ef3b2c',
+            60,
+            '#cb181d',
+            70,
+            '#a50f15',
+            80,
+            '#67000d',
+            90,
+            '#49010d'
+          ])
+
+        }
+      });
+
+
+      function drawLine(selectedData) {
+
+        d3.select("#lineInstruction").remove();
+
+        //******************
+        // Prepare D3 scales for line chart 2 (on side)
+        //******************
+
+        xExtent2 = d3.extent(selectedData, d => parser(d.year_month))
+        xExtentID2 = d3.extent(selectedData, d => d.year_month_id)
+        //d3.extent(selectedData, d=>d.value)
+
+
+        xScale2 = d3.scaleTime().domain(xExtent).range([margin2.left, width2 - margin2.right]);
+        xScaleMap2 = d3.scaleTime().domain(xExtent).range(xExtentID2) // map dates to ids
+        xScaleMapInvert2 = d3.scaleLinear().domain(xExtentID2).range(xExtent2) //map ids to dates
+        yScale2 = d3.scaleLinear().domain(yExtent2).range([height2 - margin2.bottom, margin2.top]);
+
+        //**************
+        // Setup D3 axes 2 for line chart 2
+        //**************
+
+        //console.log(timeFormat(xScaleMapInvert(34)))
+
+        svg2.call(texture);
+
+        svg2.append("rect")
+          .attr("class", "rect1")
+          .attr("fill", texture.url())
+          .attr('x', xScale2(parser("2018-01-01")) + 1) //+1 so it won't overlap with the axis
+          .attr('y', margin2.top)
+          .attr('width', xScale2(parser("2019-01-01")) - xScale2(parser("2018-01-01")))
+          .attr('height', height2 - margin2.bottom - 10) //not sure why there's a 
+          .lower()
+
+        svg2.append("rect")
+          .attr("class", "rect2")
+          .attr("fill", texture.url())
+          .attr('x', xScale2(parser("2020-01-01")))
+          .attr('y', margin2.top)
+          .attr('width', xScale2(parser("2020-12-01")) - xScale2(parser("2020-01-01")))
+          .attr('height', height2 - margin2.bottom - 10) //not sure why there's a 10
+          .lower()
+
+
+        if (lineClicked == false) {
+          // Add the line
+          svg2.append("path")
+            .datum(selectedData)
+            .attr("class", "line")
+            .attr("fill", "none")
+            .attr("stroke", "#2954a0")
+            .attr("stroke-width", 1.5)
+            .attr("d", d3.line()
+              .x(function (d) { return xScale2(parser(d.year_month)) })
+              .y(function (d) { return yScale2(d.value) })
+            )
+
+          xAxis2 = svg2.append("g").attr("class", "x-axis2")
+            .attr("transform", `translate(0, ${height2 - margin2.bottom} )`)
+            .call(d3.axisBottom(xScale2).ticks(d3.timeMonth, 3).tickFormat(d3.timeFormat('%b')))
+
+          yAxis2 = svg2.append("g").attr("class", "y-axis2")
+            .attr("transform", `translate(${margin2.left}, 0)`)
+            .call(d3.axisLeft(yScale2).ticks(4));
+
+          svg2.append("line")
+            .attr("id", "vline2")
+            .attr("x1", margin2.left)
+            .attr("x2", margin2.left)
+            .attr("y1", margin2.top)
+            .attr("y2", height2 - margin2.bottom)
+            .attr("fill", "none")
+            .attr("stroke", "black")
+            .attr("stroke-width", 2);
+
+          lineClicked = true;
+        } else {
+          d3.select(".line")
+            .datum(selectedData)
+            .transition().duration(50)
+            .attr("d", d3.line()
+              .x(function (d) { return xScale2(parser(d.year_month)) })
+              .y(function (d) { return yScale2(d.value) })
+            )
+          xAxis2 = d3.select(".x-axis2")
+            .transition().duration(50)
+            .call(d3.axisBottom(xScale2).ticks(d3.timeMonth, 3).tickFormat(d3.timeFormat('%b')));
+
+          yAxis2 = d3.select(".y-axis2")
+            .transition().duration(50)
+            .call(d3.axisLeft(yScale2).ticks(4));
+
+        }
+
+
+
+      }
+
+
+
+      map.on('mouseleave', function () {
+        map.getCanvas().style.cursor = '';
+        // popup.270();
+      });
+
+      // $(".tab-slider--nav li").click(function() {
+      //   popup.remove();
+      // });
+
+
+
+      map.on('click', 'cities', function (e) {
+
+
+        map.getCanvas().style.cursor = 'pointer';
+
+        selectedCity = e.features[0].properties.city;
+        selectedData = lineDataAll.filter(d => d.city == selectedCity)
+
+        drawLine(selectedData);
+
+        var latitude = e.features[0].properties.latitude;
+        var longitude = e.features[0].properties.longitude;
+        var year = e.features[0].properties.year;
+        var month = e.features[0].properties.month;
+        var year_month = timeFormat(xScaleMapInvert(e.features[0].properties.year_month_id));
+        var value = e.features[0].properties.value;
+        var city = e.features[0].properties.city;
+        var date = e.features[0].properties.year_month;
+
+        while (Math.abs(e.lngLat.lng - latitude) > 180) {
+          latitude += e.lngLat.lng > latitude ? 360 : -360;
+        }
+
+        var popupClass = "color1";
+        var color = "#2954a0";
+
+        if (city == "Abudhabi") {
+          city = "Abu Dhabi";
+        }
+        d3.select("#selectedCity").html(`City: ${city}`);
+
+
+
+        popup = new mapboxgl.Popup({
+          closeButton: true,
+          closeOnClick: true,
+          className: popupClass
+        })
+          .setHTML('<h3 class="popupClass"><b>' + city + '</b></h3>'
+            + '<h4><b>' + year_month + '</b><br>'
+            + '<b>PM 2.5</b>: ' + Math.round(value * 10) / 10 + ' ug/m3</h4>')
+          .setLngLat([longitude, latitude])
+          .addTo(map);
+
+
+
+        $(`.button.${popupClass}`).hover(function () {
+          $(".button a").css("color", "white");
+          $(this).css("background-color", color);
+        }, function () {
+          $(".button a").css("color", color);
+          $(this).css("background-color", "white");
+        });
+        $(".mapboxgl-popup-tip").css("border-bottom-color", color);
+
+        $(".mapboxgl-popup-tip").css("border-bottom-color", color);
 
       });
 
-      if (!mobile) {
-          map.addControl(new mapboxgl.NavigationControl());
-      }
+      //mobile
 
-      //*****************
-      // Global variables
-      //*****************
+      map.on('touchstart', 'plants', function (e) {
 
-      var parser = d3.timeParse("%Y-%m-%d")
+        map.getCanvas().style.cursor = 'pointer';
+        selectedCity = e.features[0].properties.city;
+        selectedData = lineDataAll.filter(d => d.city == selectedCity)
 
-      var min = 0;
-      var max = 250;
-      var yearMin = '01/2018';
-      var yearMax = '12/2020';
-      var minCircleSize = 0;
-      var maxCircleSize = mobile?15:30;
+        drawLine(selectedData);
 
-      if(mobile){
-        d3.select("#chart").style("display","none");
-        d3.select("#legend1").style("display","none");
-        d3.select("#legend2").style("display","none");
-      }
+        var latitude = e.features[0].properties.latitude;
+        var longitude = e.features[0].properties.longitude;
+        var year = e.features[0].properties.year;
+        var month = e.features[0].properties.month;
+        var year_month = timeFormat(xScaleMapInvert(e.features[0].properties.year_month_id));
+        var value = e.features[0].properties.value;
+        var city = e.features[0].properties.city;
+        var date = e.features[0].properties.year_month;
 
-      var sliderMin = 1;
-      var sliderMax = 36;
-      var sliderVal = 1;
+        while (Math.abs(e.lngLat.lng - latitude) > 180) {
+          latitude += e.lngLat.lng > latitude ? 360 : -360;
+        }
 
-      var tab1 = true;
+        var popupClass = "color1";
+        var color = "#2954a0";
 
-      var selectedCity = '';
-      var selectedData;
+        if (city == "Abudhabi") {
+          city = "Abu Dhabi";
+        }
+        d3.select("#selectedCity").html(city);
 
-      var lineClicked = false;
 
 
-      //**********
-      // Read data
-      //**********
+        popup = new mapboxgl.Popup({
+          closeButton: true,
+          closeOnClick: true,
+          className: popupClass
+        })
+          .setHTML('<h3 class="popupClass"><b>' + city + '</b></h3>'
+            + '<h4><b>' + year_month + '</b><br>'
+            + '<b>PM 2.5</b>: ' + Math.round(value * 10) / 10 + ' ug/m3</h4>')
+          .setLngLat([longitude, latitude])
+          .addTo(map);
 
-      function init() {
 
-            Tabletop.init({
-                key: 'https://docs.google.com/spreadsheets/d/1RPFGqv74CWZLlomCOpHt79EyFyfKjvSGnvoYHo-yrQU/edit?usp=sharing',
-                callback: onDataLoad,
-                simpleSheet: true
-            });
 
-      }
+        $(`.button.${popupClass}`).hover(function () {
+          $(".button a").css("color", "white");
+          $(this).css("background-color", color);
+        }, function () {
+          $(".button a").css("color", color);
+          $(this).css("background-color", "white");
+        });
+        $(".mapboxgl-popup-tip").css("border-bottom-color", color);
 
+        $(".mapboxgl-popup-tip").css("border-bottom-color", color);
 
-      function onDataLoad(data, index) {
 
-          $('#loading').hide();
+      });
 
-          data.forEach(function(row) {
 
-              // to deal with null lat lon values
-               var lat;
-               var lon;
+    }
+  </script>
+</body>
+<div id="loading">
+  <img id="loading-image" src="./img/load.gif" alt="Loading..." />
+</div>
 
-               if(row.longitude==null || row.longitude=='' || row.latitude==null || row.latitude==''){
-                 //console.log(row)
-                 lon = null;
-                 lat = null;
-               }else{
-                 lon = +row.longitude;
-                 lat = +row.latitude;
-               }
-
-               // to deal with null lat lon values
-
-              var feature = {
-                  'type': 'Feature',
-                  'properties': {
-                      'longitude': lon,
-                      'latitude': lat,
-                      'year': +row.year,
-                      'month': row.month,
-                      'year_month': row.year_month,
-                      'year_month_id': +row.year_month_id,
-                      'city': row.city,
-                      'value': +row.value,
-                      'date': parser(row.year_month)
-                  },
-                  'geometry': {
-                      'type': 'Point',
-                      'coordinates': [+row.longitude,+row.latitude],
-                  }
-              };
-
-
-              if(lon != null && lat !=null && !isNaN(lon) && !isNaN(lat)){
-                geoJsonData['features'].push(feature);
-              }
-
-          });
-
-          //console.log(geoJsonData)
-
-
-          //*****************************
-          // Map related global variables
-          //*****************************
-
-          var yearFilter = ["==", ["get", "year_month_id"], 1];
-
-          $("#minCircleVal").html(`9`);
-          $("#maxCircleVal").html(`${max}`);
-
-           $("#start").html(yearMin);
-           $("#end").html(yearMax);
-
-           $('#slider').prop('min', sliderMin);
-           $('#slider').prop('max', sliderMax);
-           $('#slider').prop('value', sliderVal);
-
-           var sliderValG = $("#slider").val();
-           sliderValG = parseInt(sliderValG)
-
-
-
-
-          //*************
-          // Draw circles
-          //*************
-
-
-          map.addLayer({
-              id: 'cities',
-              type: 'circle',
-              source: {
-                  type: 'geojson',
-                  data: geoJsonData
-              },
-              paint: {
-                "circle-color": "#2954a0",
-                     'circle-radius': [
-                       'interpolate',
-                       ["linear"],
-                       ['get', 'value'],
-                       min,
-                       minCircleSize,
-                       max,
-                       maxCircleSize
-                     ],
-                     'circle-opacity': 0.9,
-                     'circle-stroke-color':'white',
-                     'circle-stroke-width':1
-              }
-          });
-
-          map.setFilter('cities', yearFilter);
-
-
-          //******************
-          // Prepare D3 scales for line chart
-          //******************
-
-          var timeFormat = d3.timeFormat("%B %Y");
-
-          var xExtent = d3.extent(linedDataOverall, d=>parser(d.year_month))
-          var xExtentID = d3.extent(linedDataOverall, d=>d.year_month_id)
-          var yExtent = [0,100];
-          //d3.extent(linedDataOverall, d=>d.value)
-
-          //console.log(xExtent)
-          //console.log(yExtent)
-
-          var xScale = d3.scaleTime().domain(xExtent).range([margin.left, width - margin.right]);
-          var xScaleMap = d3.scaleTime().domain(xExtent).range(xExtentID) // map dates to ids
-          var xScaleMapInvert = d3.scaleLinear().domain(xExtentID).range(xExtent) //map ids to dates
-          var yScale = d3.scaleLinear().domain(yExtent).range([height - margin.bottom, margin.top])
-
-          //console.log(timeFormat(xScaleMapInvert(34)))
-
-          var xExtent2;
-          var xExtentID2;
-          var yExtent2 = [0,250];
-          //d3.extent(selectedData, d=>d.value)
-
-
-          var xScale2;
-          var xScaleMap2; // map dates to ids
-          var xScaleMapInvert2; //map ids to dates
-          var yScale2;
-
-          var xAxis2;
-          var yAxis2;
-
-          var texture = textures
-                          .lines()
-                          .size(8)
-                          .strokeWidth(1)
-                          .stroke("#AFAFAF");
-              svg.call(texture);
-
-              svg.append("rect")
-                .attr("class","rect3")
-                .attr("fill", texture.url())
-                .attr('x', xScale(parser("2018-01-01"))+1) //+1 so it won't overlap with the axis
-                .attr('y', margin.top)
-                .attr('width', xScale(parser("2019-01-01"))-xScale(parser("2018-01-01")))
-                .attr('height', height-margin.bottom-margin.top) //not sure why there's a 
-                .lower()
-              
-              svg.append("rect")
-                .attr("class","rect4")
-                .attr("fill", texture.url())
-                .attr('x', xScale(parser("2020-01-01")))
-                .attr('y', margin.top)
-                .attr('width', xScale(parser("2020-12-01"))-xScale(parser("2020-01-01")))
-                .attr('height', height-margin.bottom-margin.top) //not sure why there's a 10
-                .lower()
-
-              svg.append("text")
-              .attr('x', xScale(parser("2018-01-01")))
-              .attr('y', height-margin.bottom-4)
-              .attr("fill","black")
-              .text("2018")
-
-              svg.append("text")
-              .attr('x', xScale(parser("2019-01-01")))
-              .attr('y', height-margin.bottom-4)
-              .attr("fill","black")
-              .text("2019")
-
-              svg.append("text")
-              .attr('x', xScale(parser("2020-01-01")))
-              .attr('y', height-margin.bottom-4)
-              .attr("fill","black")
-              .text("2020")
-
-              svg.append("text")
-              .attr('x',xScale(parser("2018-01-01")))
-              .attr('y', margin.top+10)
-              .attr("fill","black")
-              .text("ug/m3")
-
-              svg.append("text")
-              .attr('x',xScale(parser("2018-01-01")))
-              .attr('y', 25)
-              .style("font-size",16)
-              .attr("fill","black")
-              .text("PM 2.5 monthly averages across Asia")
-
-          // Add the line
-
-          svg.append("line")
-              .attr("id","vline")
-              .attr("x1",margin.left)
-              .attr("x2",margin.left)
-              .attr("y1",margin.top)
-              .attr("y2",height - margin.bottom)
-              .attr("fill", "none")
-              .attr("stroke", "black")
-              .attr("stroke-width", 2)
-
-          svg.append("path")
-              .datum(linedDataOverall)
-              .attr("fill", "none")
-              .attr("stroke", "#2954a0")
-              .attr("stroke-width", 1.5)
-              .attr("d", d3.line()
-                .x(function(d) { return xScale(parser(d.year_month)) })
-                .y(function(d) { return yScale(d.value) })
-              )
-
-          //**************
-          // Setup D3 axes
-          //**************
-
-          var xAxis = svg.append("g").attr("class", "x-axis")
-              .attr("transform", `translate(0, ${height-margin.bottom} )`)
-              .call(d3.axisBottom(xScale).ticks(d3.timeMonth, 3).tickFormat(d3.timeFormat('%b')))
-
-          var yAxis = svg.append("g").attr("class", "y-axis")
-              .attr("transform", `translate(${margin.left}, 0)`)
-              .call(d3.axisLeft(yScale).ticks(5));
-
-
-          //*************
-          // Timer setup
-          //*************
-
-           var myTimer;
-            d3.select("#play").on("click", function() {
-
-             clearInterval (myTimer);
-              myTimer = setInterval (function() {
-                  var b = d3.select("#slider");
-                  var t = (+b.property("value") + 1) % (+b.property("max") + 1);
-                  if (t == 0) { t = +b.property("min"); }
-                  b.property("value", t);
-                  $("#slider").val(t);
-                  $("#slider").trigger('change');
-                  sliderValG = t;
-
-                  
-                  yearFilter = ["==", ["get", "year_month_id"], t];
-
-                  
-                  map.setFilter('cities', yearFilter);
-                  document.getElementById('selectedYear').innerText = timeFormat(xScaleMapInvert(t));
-
-                  d3.select("#vline")
-                  .transition()
-                  .ease(d3.easeLinear)
-                  .duration(200)
-                  .attr("x1",xScale(xScaleMapInvert(t)))
-                  .attr("x2",xScale(xScaleMapInvert(t)));
-
-                  if(lineClicked){
-                    d3.select("#vline2")
-                    .transition()
-                    .ease(d3.easeLinear)
-                    .duration(200)
-                    .attr("x1",xScale2(xScaleMapInvert2(t)))
-                    .attr("x2",xScale2(xScaleMapInvert2(t)));
-                  }
-                  
-
-                }, 200);
-            });
-
-            d3.select("#stop").on("click", function() {
-              clearInterval (myTimer);
-            });
-
-
-
-
-           //**************
-           // Slider setup
-           //**************
-
-           document.getElementById('slider').addEventListener('input', function(e) {
-                  //console.log(e.target.value)
-
-                   var sliderVal = +e.target.value;
-                   sliderValG = sliderVal;
-
-                   //below is redundant in many parts, put in own function
-                  
-                  yearFilter = ["==", ["get", "year_month_id"], sliderVal];
-                   
-                  document.getElementById('selectedYear').innerText = timeFormat(xScaleMapInvert(sliderVal));
-
-                  d3.select("#vline")
-                  .transition()
-                  .ease(d3.easeLinear)
-                  .duration(200)
-                  .attr("x1",xScale(xScaleMapInvert(sliderVal)))
-                  .attr("x2",xScale(xScaleMapInvert(sliderVal)));
-
-                  if(lineClicked){
-                    d3.select("#vline2")
-                    .transition()
-                    .ease(d3.easeLinear)
-                    .duration(200)
-                    .attr("x1",xScale2(xScaleMapInvert2(sliderVal)))
-                    .attr("x2",xScale2(xScaleMapInvert2(sliderVal)));
-                  }
-
-                  map.setFilter('cities', yearFilter);
-
-           }); //end slider input
-
-
-
-          //  $('input[type=radio]').change(function() {
-          //     if (this.value == '2018') {
-          //       map.setPaintProperty('countriesfill',
-          //       'fill-color',[
-          //         'interpolate',
-          //         ["linear"],
-          //         ['get', 'value2018'],
-          //         0,
-          //         '#e4e4e4',
-          //         1,
-          //         '#fff5f0',
-          //         10,
-          //         '#fee0d2',
-          //         20,
-          //         '#fcbba1',
-          //         30,
-          //         '#fc9272',
-          //         40,
-          //         '#fb6a4a',
-          //         50,
-          //         '#ef3b2c',
-          //         60,
-          //         '#cb181d',
-          //         70,
-          //         '#a50f15',
-          //         80,
-          //         '#67000d',
-          //         90,
-          //         '#49010d'
-          //       ])
-          //     }
-          //     else if (this.value == '2019') {
-          //       map.setPaintProperty('countriesfill',
-          //       'fill-color',[
-          //         'interpolate',
-          //         ["linear"],
-          //         ['get', 'value2019'],
-          //         0,
-          //         '#e4e4e4',
-          //         1,
-          //         '#fff5f0',
-          //         10,
-          //         '#fee0d2',
-          //         20,
-          //         '#fcbba1',
-          //         30,
-          //         '#fc9272',
-          //         40,
-          //         '#fb6a4a',
-          //         50,
-          //         '#ef3b2c',
-          //         60,
-          //         '#cb181d',
-          //         70,
-          //         '#a50f15',
-          //         80,
-          //         '#67000d',
-          //         90,
-          //         '#49010d'
-          //       ])
-          //     }else{
-
-          //       map.setPaintProperty('countriesfill',
-          //       'fill-color',[
-          //         'interpolate',
-          //         ["linear"],
-          //         ['get', 'value2020'],
-          //         0,
-          //         '#e4e4e4',
-          //         1,
-          //         '#fff5f0',
-          //         10,
-          //         '#fee0d2',
-          //         20,
-          //         '#fcbba1',
-          //         30,
-          //         '#fc9272',
-          //         40,
-          //         '#fb6a4a',
-          //         50,
-          //         '#ef3b2c',
-          //         60,
-          //         '#cb181d',
-          //         70,
-          //         '#a50f15',
-          //         80,
-          //         '#67000d',
-          //         90,
-          //         '#49010d'
-          //       ])
-
-          //     }
-          //   });
-
-          
-            function drawLine(selectedData){
-
-              d3.select("#lineInstruction").remove();
-
-              //******************
-              // Prepare D3 scales for line chart 2 (on side)
-              //******************
-
-              xExtent2 = d3.extent(selectedData, d=>parser(d.year_month))
-              xExtentID2 = d3.extent(selectedData, d=>d.year_month_id)
-              //d3.extent(selectedData, d=>d.value)
-
-
-              xScale2 = d3.scaleTime().domain(xExtent).range([margin2.left, width2 - margin2.right]);
-              xScaleMap2 = d3.scaleTime().domain(xExtent).range(xExtentID2) // map dates to ids
-              xScaleMapInvert2 = d3.scaleLinear().domain(xExtentID2).range(xExtent2) //map ids to dates
-              yScale2 = d3.scaleLinear().domain(yExtent2).range([height2 - margin2.bottom, margin2.top]);
-
-              //**************
-              // Setup D3 axes 2 for line chart 2
-              //**************
-
-              //console.log(timeFormat(xScaleMapInvert(34)))
-
-              svg2.call(texture);
-
-              svg2.append("rect")
-                .attr("class","rect1")
-                .attr("fill", texture.url())
-                .attr('x', xScale2(parser("2018-01-01"))+1) //+1 so it won't overlap with the axis
-                .attr('y', margin2.top)
-                .attr('width', xScale2(parser("2019-01-01"))-xScale2(parser("2018-01-01")))
-                .attr('height', height2-margin2.bottom-10) //not sure why there's a 
-                .lower()
-              
-              svg2.append("rect")
-                .attr("class","rect2")
-                .attr("fill", texture.url())
-                .attr('x', xScale2(parser("2020-01-01")))
-                .attr('y', margin2.top)
-                .attr('width', xScale2(parser("2020-12-01"))-xScale2(parser("2020-01-01")))
-                .attr('height', height2-margin2.bottom-10) //not sure why there's a 10
-                .lower()
-
-
-              if(lineClicked == false){
-                // Add the line
-                svg2.append("path")
-                  .datum(selectedData)
-                  .attr("class","line")
-                  .attr("fill", "none")
-                  .attr("stroke", "#2954a0")
-                  .attr("stroke-width", 1.5)
-                  .attr("d", d3.line()
-                    .x(function(d) { return xScale2(parser(d.year_month)) })
-                    .y(function(d) { return yScale2(d.value) })
-                  )
-
-                  xAxis2 = svg2.append("g").attr("class", "x-axis2")
-                  .attr("transform", `translate(0, ${height2-margin2.bottom} )`)
-                  .call(d3.axisBottom(xScale2).ticks(d3.timeMonth, 3).tickFormat(d3.timeFormat('%b')))
-
-                  yAxis2 = svg2.append("g").attr("class", "y-axis2")
-                  .attr("transform", `translate(${margin2.left}, 0)`)
-                  .call(d3.axisLeft(yScale2).ticks(4));
-
-                  svg2.append("line")
-                    .attr("id","vline2")
-                    .attr("x1",margin2.left)
-                    .attr("x2",margin2.left)
-                    .attr("y1",margin2.top)
-                    .attr("y2",height2 - margin2.bottom)
-                    .attr("fill", "none")
-                    .attr("stroke", "black")
-                    .attr("stroke-width", 2);
-
-                  lineClicked = true;
-              }else{
-                d3.select(".line")
-                .datum(selectedData)
-                .transition().duration(50)
-                .attr("d", d3.line()
-                    .x(function(d) { return xScale2(parser(d.year_month)) })
-                    .y(function(d) { return yScale2(d.value) })
-                  )
-                xAxis2 = d3.select(".x-axis2")
-                .transition().duration(50)
-                .call(d3.axisBottom(xScale2).ticks(d3.timeMonth, 3).tickFormat(d3.timeFormat('%b')));
-
-                yAxis2 = d3.select(".y-axis2")
-                .transition().duration(50)
-                .call(d3.axisLeft(yScale2).ticks(4));
-
-              }
-              
-
-
-          }
-
-
-
-          map.on('mouseleave', function() {
-              map.getCanvas().style.cursor = '';
-              // popup.270();
-          });
-
-          // $(".tab-slider--nav li").click(function() {
-          //   popup.remove();
-          // });
-
-          
-
-            map.on('click', 'cities', function(e) {
-
-                
-                map.getCanvas().style.cursor = 'pointer';
-
-                selectedCity = e.features[0].properties.city;               
-                selectedData = lineDataAll.filter(d => d.city == selectedCity)
-
-                drawLine(selectedData);
-
-                var latitude = e.features[0].properties.latitude;
-                var longitude = e.features[0].properties.longitude;
-                var year = e.features[0].properties.year;
-                var month = e.features[0].properties.month;
-                var year_month = timeFormat(xScaleMapInvert(e.features[0].properties.year_month_id));
-                var value = e.features[0].properties.value;
-                var city = e.features[0].properties.city;
-                var date = e.features[0].properties.year_month;
-
-                while (Math.abs(e.lngLat.lng - latitude) > 180) {
-                    latitude += e.lngLat.lng > latitude ? 360 : -360;
-                }
-
-                var popupClass="color1";
-                var color = "#2954a0";
-
-                if(city == "Abudhabi"){
-                  city = "Abu Dhabi";
-                }
-                d3.select("#selectedCity").html(`City: ${city}`);
-
-
-
-                  popup = new mapboxgl.Popup({
-                          closeButton: true,
-                          closeOnClick: true,
-                          className: popupClass
-                      })
-                      .setHTML('<h3 class="popupClass"><b>' + city + '</b></h3>'
-                      + '<h4><b>'+year_month+'</b><br>'
-                      + '<b>PM 2.5</b>: '+Math.round(value * 10) / 10+' ug/m3</h4>')
-                      .setLngLat([longitude, latitude])
-                      .addTo(map);
-
-
-
-                    $(`.button.${popupClass}`).hover(function(){
-                      $(".button a").css("color","white");
-                      $(this).css("background-color",color);
-                     },function(){
-                       $(".button a").css("color",color);
-                       $(this).css("background-color","white");
-                     });
-                     $(".mapboxgl-popup-tip").css("border-bottom-color",color);
-
-                $(".mapboxgl-popup-tip").css("border-bottom-color", color);
-
-            });
-
-            //mobile
-
-            map.on('touchstart', 'plants', function(e) {
-            
-              map.getCanvas().style.cursor = 'pointer';
-              selectedCity = e.features[0].properties.city;               
-              selectedData = lineDataAll.filter(d => d.city == selectedCity)
-
-              drawLine(selectedData);
-
-              var latitude = e.features[0].properties.latitude;
-              var longitude = e.features[0].properties.longitude;
-              var year = e.features[0].properties.year;
-              var month = e.features[0].properties.month;
-              var year_month = timeFormat(xScaleMapInvert(e.features[0].properties.year_month_id));
-              var value = e.features[0].properties.value;
-              var city = e.features[0].properties.city;
-              var date = e.features[0].properties.year_month;
-
-              while (Math.abs(e.lngLat.lng - latitude) > 180) {
-                  latitude += e.lngLat.lng > latitude ? 360 : -360;
-              }
-
-              var popupClass="color1";
-              var color = "#2954a0";
-
-              if(city == "Abudhabi"){
-                city = "Abu Dhabi";
-              }
-              d3.select("#selectedCity").html(city);
-
-
-
-                popup = new mapboxgl.Popup({
-                        closeButton: true,
-                        closeOnClick: true,
-                        className: popupClass
-                    })
-                    .setHTML('<h3 class="popupClass"><b>' + city + '</b></h3>'
-                    + '<h4><b>'+year_month+'</b><br>'
-                    + '<b>PM 2.5</b>: '+Math.round(value * 10) / 10+' ug/m3</h4>')
-                    .setLngLat([longitude, latitude])
-                    .addTo(map);
-
-
-
-                  $(`.button.${popupClass}`).hover(function(){
-                    $(".button a").css("color","white");
-                    $(this).css("background-color",color);
-                  },function(){
-                    $(".button a").css("color",color);
-                    $(this).css("background-color","white");
-                  });
-                  $(".mapboxgl-popup-tip").css("border-bottom-color",color);
-
-              $(".mapboxgl-popup-tip").css("border-bottom-color", color);
-            
-            
-            });
-
-
-      }
-       </script>
-    </body>
-    <div id="loading">
-       <img id="loading-image" src="./img/load.gif" alt="Loading..." />
-    </div>
- </html>
+</html>
